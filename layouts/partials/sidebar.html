@@ -17,6 +17,8 @@
       </ul>
     </nav>
 
-    <p>{{ with .Site.Params.copyright }}{{.}}{{ else }} missing copyright {{end}}</p>
+		<div class="sidebar-copyright">
+			<p>{{ with .Site.Params.copyright }}{{.}}{{ else }} missing copyright {{end}}</p>
+		</div>
   </div>
 </aside>
