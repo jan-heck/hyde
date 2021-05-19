@@ -1,20 +1,22 @@
 {{ define "main" -}}
-<div class="posts">
-{{ range .Site.RegularPages -}}
-<article class="post">
-  <h1 class="post-title">
-    <a href="{{ .Permalink }}">{{ .Title }}</a>
-  </h1>
-	{{ if .Date }}
-  <time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}" class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>
-	{{ end }}
-  {{ .Summary }}
-  {{ if .Truncated }}
-  <div class="read-more-link">
-    <a href="{{ .RelPermalink }}">Read More…</a>
-  </div>
-  {{ end }}
-</article>
-{{- end }}
-</div>
+<h1>Welcome.</h1>
+Thank you for stopping by. You should find what you're looking for in the adjacent menu.
+<!--<div class="posts">-->
+<!--{{ range .Site.RegularPages -}}-->
+<!--<article class="post">-->
+  <!--<h1 class="post-title">-->
+    <!--<a href="{{ .Permalink }}">{{ .Title }}</a>-->
+  <!--</h1>-->
+	<!--{{ if .Date }}-->
+  <!--<time datetime="{{ .Date.Format "2006-01-02T15:04:05Z0700" }}" class="post-date">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>-->
+	<!--{{ end }}-->
+  <!--{{ .Summary }}-->
+  <!--{{ if .Truncated }}-->
+  <!--<div class="read-more-link">-->
+    <!--<a href="{{ .RelPermalink }}">Read More…</a>-->
+  <!--</div>-->
+  <!--{{ end }}-->
+<!--</article>-->
+<!--{{- end }}-->
+<!--</div>-->
 {{- end }}
