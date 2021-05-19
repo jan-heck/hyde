@@ -100,7 +100,8 @@ a.sidebar-nav-item:focus {
 }
 
 .sidebar-copyright {
-	color: #333;
+	color: #888;
+	font-size: 1rem;
 }
 
 /* Sticky sidebar
